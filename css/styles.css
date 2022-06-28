@@ -437,6 +437,8 @@ img {
 /* -----------------------------FOOTER----------------------------- */
 .footer {
   display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--main-background-color);
 }
 .footer-logo {
@@ -486,14 +488,10 @@ img {
 .footer-address {
   display: inline-block;
   margin-right: 70px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-soc {
   display: inline-block;
-  padding-top: 75px;
-  padding-bottom: 97px;
   margin-right: 93px;
 }
 .footer-soc-list {
@@ -537,8 +535,6 @@ img {
 }
 .footer-form {
   display: inline-block;
-  padding-top: 72px;
-  padding-bottom: 94px;
 }
 .online-form {
   display: flex;
@@ -552,6 +548,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--main-footer-color);
 }
 .online-input::placeholder {
   font-size: 16px;
@@ -718,8 +715,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
   padding: 40px;
 
   background-color: #ffffff;
@@ -755,7 +752,7 @@ img {
 }
 .modal-title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -770,6 +767,7 @@ img {
   background-color: transparent;
   outline: transparent;
   padding-left: 42px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus {
   border-color: var(--accent-color);
@@ -782,6 +780,7 @@ img {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn,
 .online-btn {
@@ -820,6 +819,7 @@ img {
   color: var(--main-text-color);
 }
 .modal-text {
+  display: block;
   padding: 12px 16px;
   width: 100%;
   height: 120px;
@@ -839,6 +839,9 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+.modal-text:hover {
+  border-color: var(--accent-color);
+}
 .input-wrap {
   position: relative;
 }
@@ -849,6 +852,7 @@ img {
   color: var(--main-text-color);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .check-text span {
   display: flex;
